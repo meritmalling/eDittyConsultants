@@ -1,0 +1,88 @@
+/* {
+    brown: #312823
+    yellow: #f5a21e
+    orange: #fa4508
+    cream: #fbebd3
+    pink: #f9b3a4
+    tan: #c8998a
+    sunflower: #f3c583
+    apple: #abb6a4
+    green: #748c75
+    plum: #5c3a51
+}
+
+#f5a21e #fa4508 #f9b3a4 #f3c583  #abb6a4 #748c75 #5c3a51
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fef9f2;
+
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #fa4508;
+    color: #fef9f2;
+}
+
+.header-div {
+    padding: 12px;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+footer {
+    background-color: #5c3a51;
+    color: #fef9f2;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    font-size: 21px;;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.content-container {
+    padding: 40px
+}
+
+#emily {
+    max-width: 50%;
+    height: auto;
+}
+
+#habibah {
+    max-width: 50%;
+    height: auto;
+}
+
+html {
+    height: 100%;
+  }
+  
+
+  .content-container {
+    flex-grow: 1;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
