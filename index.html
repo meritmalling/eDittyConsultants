@@ -8,94 +8,157 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
+  <script src="https://kit.fontawesome.com/a1135dad73.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<div class="content-container">
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a class="flex items-center">
-                <!-- <img src="https://cdn.theorg.com/033f2efa-8226-42ed-9e96-eeca3c11ebcd_medium.jpg" class="h-14 mr-3" /> -->
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">eDitty Consultants</span>
-            </a>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul id="tabs-list" class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a data-content-id="content1" id="tab1" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">About</a>
-                    </li>
-                    <li>
-                        <a data-content-id="content2" id="tab2" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Consultants</a>
-                    </li>
-                    <li>
-                        <a data-content-id="content3" id="tab3" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-                    </li>
-                </ul>
+<body>
+<div class="content-container flex flex-col min-h-screen">
+
+    <nav>
+        <div class="flex flex-wrap justify-between mx-auto">
+            <div class="text-4xl">
+                <span  style="color: #fa4508">eDitty</span> Consultants
             </div>
+            <ul id="tabs-list" class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                <li>
+                    <a data-content-id="content1" id="tab1" class="block py-2 pl-3 pr-4 selected">About</a>
+                </li>
+                <li>
+                    <a data-content-id="content2" id="tab2" class="block py-2 pl-3 pr-4">Consultants</a>
+                </li>
+                <li>
+                    <a data-content-id="content3" id="tab3" class="block py-2 pl-3 pr-4">Services</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div class ="content-viewport">
+    <div class ="content-viewport flex-grow">
+
+        <!-- ABOUT -->
         <div id="content1" class="content-div">
-            <div class="projects grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- <img id="emily" src="https://media.licdn.com/dms/image/D5603AQFNgDfPlaSIWQ/profile-displayphoto-shrink_800_800/0/1677550410923?e=1700697600&v=beta&t=6HfgEMy2yPQYs6g6USo-A167I3biQfRmhlrCXLrOfRE"> -->
-            <!-- <img id="habibah" src="https://media.licdn.com/dms/image/C4D03AQEYIUg7-iJicg/profile-displayphoto-shrink_800_800/0/1517432511929?e=1700697600&v=beta&t=8e_am5oltQQMMm6H_P56wpJocFWfGe_PcybxX1szP0E"> -->
-           <div>
-            At [Consulting Group Name], we're not just consultants; we're your partners in purpose. We understand that every nonprofit is unique, and that's why we offer tailored solutions designed to maximize your organization's potential.
-
-            Our Unique Value Proposition:
-            
-            1. Personalized Strategies: We don't believe in one-size-fits-all solutions. Our experts work closely with you to craft strategies that reflect your nonprofit's mission, values, and goals.
-            
-            2. Impactful Results: We're not satisfied with just helping you navigate challenges – we're committed to delivering tangible results that make a real difference. Your success is our success.
-            
-            3. Sustainable Growth: Our consultancy isn't just about quick fixes; it's about building a strong foundation for your nonprofit's future. We're here for the long haul, helping you create lasting impact.
-            
-            Join forces with [Consulting Group Name] and embark on a journey towards greater effectiveness, increased reach, and a brighter future for your cause. Contact us today to explore how we can help you achieve your nonprofit's vision."
-            
-            
-            
-            
-            
-           </div>
-           
-            <!-- <p class="mt-4">I am an accomplished leader with a proven track record of building organizational capacity, driving substantial revenue growth, and skillfully managing strategic change. I love coaching and asking the critical questions that clear a path when it's difficult to find the north star or simply take the next step. I successfully manage annual budgets ~$20M+ and lead teams to consistently exceed targets by 25%-100%. I am a creative problem solver with the ability to make thoughtful decisions through an equity framework. My relationship-centered approach is marked by persistence and patience, fostering long-term outcomes and positive impact that withstands the test of time.</p> -->
+            <div class="about grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="">
+                    <p class="mb-4">At <span style="color: #fa4508">eDitty</span> Consultants, we're not just consultants;<br>we're your partners in purpose.</p>
+                    <p class="mb-4">We understand that every nonprofit is unique, and that's why we offer tailored solutions designed to maximize your organization's potential.</p>
+                    <div class="text-center">
+                        <div class="mx-autot" style="display: inline-block;">
+                            <img class="rounded-md max-w-md object-cover" id="aboutemily" src="https://media.licdn.com/dms/image/D5603AQFNgDfPlaSIWQ/profile-displayphoto-shrink_800_800/0/1677550410923?e=1700697600&v=beta&t=6HfgEMy2yPQYs6g6USo-A167I3biQfRmhlrCXLrOfRE" alt="Your Image">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-3xl mb-4">Our <span style="color: #fa4508">Unique Value</span> Proposition</h1>
+                    <ul>
+                        <li>
+                            <h2 class="font-bold underline" style="color: #f5a21e; font-size: 1.1em;">Personalized Strategies</h2>
+                            <p>We don't believe in one-size-fits-all solutions. Our experts work closely with you to craft strategies that reflect your nonprofit's mission, values, and goals.</p>
+                        </li>
+                        <li>
+                            <h2 class="font-bold underline" style="color: #748c75; font-size: 1.1em;">Impactful Results</h2>
+                            <p>We're not satisfied with just helping you navigate challenges – we're committed to delivering tangible results that make a real difference. Your success is our success.</p>
+                        </li>
+                        <li>
+                            <h2 class="font-bold underline" style="color: #5c3a51; font-size: 1.1em;">Sustainable Growth</h2>
+                            <p>Our consultancy isn't just about quick fixes; it's about building a strong foundation for your nonprofit's future. We're here for the long haul, helping you create lasting impact.</p>
+                        </li>
+                    </ul>
+                    <p style="padding-top: .4em">Join forces with eDitty Consultants and embark on a journey towards greater effectiveness, increased reach, and a brighter future for your cause.</p>
+                    <p style="padding-top: .8em"><span style="color: #fa4508"><a href="mailto:hello@edittyconsultants.com">Contact us today</a></span> to explore how we can help you achieve your nonprofit's vision.</p>
+                </div>
             </div>
-        </div>
-        <div id="content2" class="content-div">Content for Div 2</div>
+        </div> 
 
-        <div id="content3" class="content-div">
+        <!-- CONSULTANTS -->
+        <div id="content2" class="content-div hidden">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="consultants grid justify-center items-center">
+                    <img class="grid justify-center items-center" id="emily" src="https://media.licdn.com/dms/image/D5603AQFNgDfPlaSIWQ/profile-displayphoto-shrink_800_800/0/1677550410923?e=1700697600&v=beta&t=6HfgEMy2yPQYs6g6USo-A167I3biQfRmhlrCXLrOfRE">
+                    <p class="aboutme mt-4">I am an accomplished leader with a proven track record of building organizational capacity, driving substantial revenue growth, and skillfully managing strategic change. I love coaching and asking the critical questions that clear a path when it's difficult to find the north star or simply take the next step. I successfully manage annual budgets ~$20M+ and lead teams to consistently exceed targets by 25%-100%. I am a creative problem solver with the ability to make thoughtful decisions through an equity framework. My relationship-centered approach is marked by persistence and patience, fostering long-term outcomes and positive impact that withstands the test of time.</p>
+                </div>
+                <div class="consultants grid justify-center items-center">
+                    <img class="grid justify-center items-center" id="habibah" src="https://media.licdn.com/dms/image/C4D03AQEYIUg7-iJicg/profile-displayphoto-shrink_800_800/0/1517432511929?e=1700697600&v=beta&t=8e_am5oltQQMMm6H_P56wpJocFWfGe_PcybxX1szP0E">
+                    <p class="aboutme mt-4">Dedicated to building the capacity of organizations to be impactful resources to the community at large. This is accomplished through collaboration at the highest level. I am passionate about understanding and adapting to diverse cultures and perspectives. I am a servant leader committed to the process, the people and the results.</p>
+                </div>
+                <div class="consultants grid justify-center items-center">
+                    <img class="grid justify-center items-center" id="emily" src="https://media.licdn.com/dms/image/C5603AQEi0jWUjlpvHA/profile-displayphoto-shrink_800_800/0/1596121147599?e=1700697600&v=beta&t=0kIqOkJPDgRIAv52aD5UbvEyzHIXvbiYSn5CpMGR1uU">
+                    <p class="aboutme mt-4">A results-and-heart driven leader in the social sector, working to level the playing field through social change programs and advocacy. Specialties include: diversified fund development including capital campaigns; board management and development; program development and evaluation; strategic planning and historic preservation/capital improvements.</p>
+                </div>
+            </div>  
+        </div>
+   
+        <!-- SERVICES -->
+        <div id="content3" class="content-div hidden">
             <div class="projects grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-chart-pie yellow" style="font-size: 80px"></i>
+                    <h1>Strategic Planning</h1>
+                    <p class="services-text" id="strategic-planning">Assisting organizations in developing long-term strategic plans to set clear goals and priorities.</p>
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">   
+                    <i class="grid justify-center items-center fa-solid fa-circle-dollar-to-slot green" style="font-size: 80px"></i>
+                    <h1>Fundraising Strategy</h1>
+                    <p class="services-text" id="fundraising-strategy">Creating and implementing fundraising strategies, including grant writing, donor cultivation, and crowdfunding campaigns.</p>
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-user-tie plum" style="font-size: 80px"></i>
+                    <h1>Board Development</h1>
+                    <p class="services-text" id="board-development">Training and advising non-profit boards on governance, leadership, and best practices.</p>
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-regular fa-file-lines apple" style="font-size: 80px"></i>
+                    <h1>Grant Writing & Research</h1>
+                    <p class="services-text" id="grant-writing">Identifying potential grant opportunities and preparing compelling grant proposals.</p>
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-magnifying-glass-chart pink"  style="font-size: 80px"></i>
+                    <h1>Program Evaluation</h1>
+                    <p class="services-text" id="program-evaluation">Assessing the effectiveness of existing programs and recommending improvements or adjustments.</p>
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-globe sunflower" style="font-size: 80px"></i>
+                    <h1>Capacity Building</h1>
+                    <p class="services-text" id="capacity-building">Helping organizations build their internal capacity through staff training, volunteer management, and infrastructure development.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-hand-holding-hand green" style="font-size: 80px"></i>
+                    <h1>Marketing & Public Relations</h1>
+                    <p class="services-text" id="marketing-pr">Developing marketing plans, social media strategies, and public relations campaigns to raise awareness and support.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-hand-holding-dollar yellow" style="font-size: 80px"></i>
+                    <h1>Financial Management</h1>
+                    <p class="services-text" id="financial-management">Providing financial analysis, budgeting assistance, and financial sustainability planning.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-section pink" style="font-size: 80px"></i>
+                    <h1>Non-Profit Compliance</h1>
+                    <p class="services-text" id="compliance">Ensuring organizations adhere to legal and regulatory requirements, including 501(c)(3) tax-exempt status.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-scale-unbalanced sunflower" style="font-size: 80px"></i>
+                    <h1>Impact Assessment</h1>
+                    <p class="services-text" id="impact">Measuring and communicating the social and environmental impact of the organization's work.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-people-group plum" style="font-size: 80px"></i>
+                    <h1>Diversity, Equity, & Inclusion Training</h1>
+                    <p class="services-text" id="dei">Promoting diversity, equity, and inclusion within the organization and its programs.</p>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <i class="grid justify-center items-center fa-solid fa-hands-holding-circle apple" style="font-size: 80px"></i>
+                    <h1>Program Development</h1>
+                    <p class="services-text" id="program-development">Assisting in the creation of new programs or initiatives, from conceptualization to implementation.</p>
                 </div>
             </div>
         </div>
-    
+
     </div>
 
+    <footer class="py-2">
+        <p class="text-xs sm:text-sm text-center bottom-0 w-full m-4">© 2023 eDittyConsultants All Rights Reserved</p>
+    </footer>
 
-
-</div>  
-<footer class="py-4 bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-    <div class="container mx-auto text-center">
-        &copy; 2023 E. Ditty Consultants. All rights reserved.
-    </div>
-</footer>
+</div>
 </body>
 </html>
