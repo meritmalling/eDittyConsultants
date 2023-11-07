@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const contentDivs = document.querySelectorAll(".content-div");
 
   const tabs = [
-    document.getElementById("tab1"),
-    document.getElementById("tab2"),
-    document.getElementById("tab3"),
+    document.getElementById("about"),
+    document.getElementById("consultants"),
+    document.getElementById("services"),
   ];
 
   tabs.forEach((tab) => {
@@ -20,9 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       contentDiv.classList.remove("hidden");
 
       tabs.forEach((tab) => {
-        tab.classList.remove("selected");
+        tab.classList.remove("orange");
       });
-      tab.classList.add("selected");
+      tab.classList.add("orange");
     });
   });
 });
+
+// when mobile add text-justify class

@@ -3,23 +3,18 @@
 html {
     margin: 0 auto;
 }
+
 body {
     background-color: #fdf7ed;
     color: #312823;
     font-family: 'Montserrat';
     font-size: 20px;
     line-height: 1.5;
-    min-height: 100vh;
     display: flex;
-    padding: 16px;
     flex-direction: column;
+    min-height: 100vh;
     user-select: none;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+    padding: 16px;
 }
 
 .content-container {
@@ -29,53 +24,7 @@ body {
     padding-top: 100px;
 }
 
-.content-viewport {
-    padding-top: 2rem;
-}
-
-#aboutemily {
-    margin: 10px;
-}
-
-.about ul li {
-    padding-top: .4em;
-}
-
-.consultants img {
-    border-radius: 50%; 
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.aboutme {
-    display:none;
-}
-
-.services-text {
-    display: none;
-}
-
-.services i {
-    padding-bottom: 8px;
-}
-
-#tabs-list li:hover {
-    color: #fa4508;
-    cursor: pointer;
-}
-
-.selected {
-    color: #fa4508;
-}
-
-.service:hover i {
-    color: #fa4508;
-    cursor: pointer;
-
-}
-
-
+/* Color Classes */
 .yellow {
     color: #f5a21e;
 }
@@ -94,3 +43,115 @@ body {
 .pink {
     color: #f9b3a4;
 }
+.orange {
+    color: #fa4508;
+}
+
+/* Hovers */
+#tabs-list li:hover {
+    color: #fa4508;
+    cursor: pointer;
+}
+
+.service:hover i {
+    color: #fa4508;
+    cursor: pointer;
+
+}
+
+.consultants {
+    min-height: 300px;
+}
+
+.consultants img {
+    border-radius: 10%; 
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.service {
+    min-height: 180px;
+}
+
+
+/* Media Overrides */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Random - REVISIT THESE */
+/* .content-viewport {
+    padding-top: 2rem;
+}
+
+.about ul li {
+    padding-top: .4em;
+} */
+
+
+/* .services i {
+    padding-bottom: 8px;
+} */
+/* 
+.service-card {
+    perspective: 1000px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+} 
+
+.service.service:click .service-card {
+    transform: rotateY(180deg);
+}
+
+.service-front,
+.service-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.service-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .service-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.service-front,
+.service-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-back {
+    transform: rotateY(180deg);
+} */
+
+.divider-line {
+    height: 1px; /* Set the thickness of the line */
+    background-color: #fa4508; /* Set the color of the line */
+    border: none; /* Ensure there is no border */
+    margin-top: 10px; /* Optional: space above the line */
+    margin-bottom: 10px; /* Optional: space below the line */
+  }
+  

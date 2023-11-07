@@ -2,32 +2,36 @@
 <html>
 <head>
   <title> eDitty Consultants</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/a1135dad73.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
 <div class="content-container flex flex-col min-h-screen">
 
-    <nav>
+    <nav class="mb-8">
         <div class="flex flex-wrap justify-between mx-auto">
             <div class="text-4xl">
-                <span  style="color: #fa4508">eDitty</span> Consultants
+                <span class="orange">eDitty</span> Consultants
             </div>
             <ul id="tabs-list" class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
                 <li>
-                    <a data-content-id="content1" id="tab1" class="block py-2 pl-3 pr-4 selected">About</a>
+                    <a data-content-id="content1" id="about" class="block py-2 pl-3 pr-4 selected">About</a>
                 </li>
                 <li>
-                    <a data-content-id="content2" id="tab2" class="block py-2 pl-3 pr-4">Consultants</a>
+                    <a data-content-id="content2" id="consultants" class="block py-2 pl-3 pr-4">Consultants</a>
                 </li>
                 <li>
-                    <a data-content-id="content3" id="tab3" class="block py-2 pl-3 pr-4">Services</a>
+                    <a data-content-id="content3" id="services" class="block py-2 pl-3 pr-4">Services</a>
                 </li>
             </ul>
         </div>
@@ -37,128 +41,259 @@
 
         <!-- ABOUT -->
         <div id="content1" class="content-div">
-            <div class="about grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <div class="mt-8 about grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div class="">
-                    <p class="mb-4">At <span style="color: #fa4508">eDitty</span> Consultants, we're not just consultants;<br>we're your partners in purpose.</p>
-                    <p class="mb-4">We understand that every nonprofit is unique, and that's why we offer tailored solutions designed to maximize your organization's potential.</p>
-                    <div class="text-center">
-                        <div class="mx-autot" style="display: inline-block;">
-                            <img class="rounded-md max-w-md object-cover" id="aboutemily" src="https://media.licdn.com/dms/image/D5603AQFNgDfPlaSIWQ/profile-displayphoto-shrink_800_800/0/1677550410923?e=1700697600&v=beta&t=6HfgEMy2yPQYs6g6USo-A167I3biQfRmhlrCXLrOfRE" alt="Your Image">
-                        </div>
-                    </div>
+                    <p class="mb-4">
+                        At 
+                        <span class="orange">eDitty</span> 
+                        Consultants, we believe the world can be repaired through
+                        <span class="plum">learning</span>,
+                        <span class="green">understanding</span>,
+                        and activating from a place of 
+                        <span class="yellow">deep empathy and care</span>.
+                        <br>
+                        <span class="font-bold mt-4 block 2xl-text" class="orange"> This is the work of humanity.</span>
+                    </p>
+
+                    <h1 class="pt-4 text-2xl mb-4 underline yellow">Our Approach</h1>
+                    <p>We start with curiosity. We ask questions, turn over the rocks, and seek diverse perspectives so the root problem can be uncovered and addressed. We co-create, braiding tested practices with emerging concepts to create solutions that are actionable and aligned with organizational values. </p>
+        
+                    <h1 class="pt-4 text-2xl mb-4 underline green">Our Team</h1>
+                    <p>We have spent our lives in organizations working to solve problems with scarce resources and mounting challenges; often outside of our control. Staying true to our values and beliefs, we have moved mountains and made a difference in the world. We will help you do the same.</p>
                 </div>
+   
                 <div>
-                    <h1 class="text-3xl mb-4">Our <span style="color: #fa4508">Unique Value</span> Proposition</h1>
-                    <ul>
-                        <li>
-                            <h2 class="font-bold underline" style="color: #f5a21e; font-size: 1.1em;">Personalized Strategies</h2>
-                            <p>We don't believe in one-size-fits-all solutions. Our experts work closely with you to craft strategies that reflect your nonprofit's mission, values, and goals.</p>
-                        </li>
-                        <li>
-                            <h2 class="font-bold underline" style="color: #748c75; font-size: 1.1em;">Impactful Results</h2>
-                            <p>We're not satisfied with just helping you navigate challenges – we're committed to delivering tangible results that make a real difference. Your success is our success.</p>
-                        </li>
-                        <li>
-                            <h2 class="font-bold underline" style="color: #5c3a51; font-size: 1.1em;">Sustainable Growth</h2>
-                            <p>Our consultancy isn't just about quick fixes; it's about building a strong foundation for your nonprofit's future. We're here for the long haul, helping you create lasting impact.</p>
-                        </li>
+                    <p class="pl-4" style="border-left: 4px solid #fa4508; color: #fa4508">
+                        “We believe the solution to any problem starts with curiosity. 
+                        We believe that curiosity paired with empathy creates a path for true compassion.
+                        We believe in the lasting power of collaboration and community building.
+                        We believe that inviting and honoring diverse perspectives enrich exploration and creation.
+                        We believe the best solutions arise when those closest to the problem are included in the process.
+                        We believe in you.”
+                    </p>
+
+                    <p class="pt-6">We provide support to the organizations and people who are creating a world free from ignorance, injustice, and inequity in all its forms.</p>
+                    <p class="pt-6">If your organization seeks actionable solutions to improve the world we can offer support including:</p>
+                    <ul class="pt-2 list-disc pl-5">
+                        <li class="mb-2 plum">clear and achievable plans</li>
+                        <li class="mb-2 green">well trained leaders, staff and board members</li>
+                        <li class="mb-2 yellow">sustainable and abundant resources</li>
                     </ul>
-                    <p style="padding-top: .4em">Join forces with eDitty Consultants and embark on a journey towards greater effectiveness, increased reach, and a brighter future for your cause.</p>
-                    <p style="padding-top: .8em"><span style="color: #fa4508"><a href="mailto:hello@edittyconsultants.com">Contact us today</a></span> to explore how we can help you achieve your nonprofit's vision.</p>
+                    <p class="pt-6""><span class="orange"><a href="mailto:hello@edittyconsultants.com">Contact us today</a></span> to learn more.</p>
                 </div>
             </div>
         </div> 
 
         <!-- CONSULTANTS -->
-        <div id="content2" class="content-div hidden">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="consultants grid justify-center items-center">
-                    <img class="grid justify-center items-center" id="emily" src="https://media.licdn.com/dms/image/D5603AQFNgDfPlaSIWQ/profile-displayphoto-shrink_800_800/0/1677550410923?e=1700697600&v=beta&t=6HfgEMy2yPQYs6g6USo-A167I3biQfRmhlrCXLrOfRE">
-                    <p class="aboutme mt-4">I am an accomplished leader with a proven track record of building organizational capacity, driving substantial revenue growth, and skillfully managing strategic change. I love coaching and asking the critical questions that clear a path when it's difficult to find the north star or simply take the next step. I successfully manage annual budgets ~$20M+ and lead teams to consistently exceed targets by 25%-100%. I am a creative problem solver with the ability to make thoughtful decisions through an equity framework. My relationship-centered approach is marked by persistence and patience, fostering long-term outcomes and positive impact that withstands the test of time.</p>
+        <div id="content2" class="content-div hidden text-justify">
+            <!-- <div class="grid grid-cols-2 md:grid-cols-3 gap-4"> -->
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                    <div class="divider-line"></div>
+
+                    <div class="consultants grid grid-cols-3 justify-center items-center">
+                        <div class="col-span-1">
+                            <img class="grid justify-center items-center filter hue-rotate-[10deg]" id="emily" src="https://media.licdn.com/dms/image/D5603AQEYDbTNGL1-uQ/profile-displayphoto-shrink_800_800/0/1698960919018?e=1704931200&v=beta&t=XL6x1sb1M4ipf1CEuLN8ThXrykBZ7luA1XyM5uXTeBo">
+                        </div>
+                        <div class="col-span-2">
+                            <h1 class="text-2xl orange">Emily Ditty</h1>
+                            <p class="mt-4">I am an accomplished leader with a proven track record of building organizational capacity, driving substantial revenue growth, and skillfully managing strategic change. I love coaching and asking the critical questions that clear a path when it's difficult to find the north star or simply take the next step. I successfully manage annual budgets ~$20M+ and lead teams to consistently exceed targets by 25%-100%. I am a creative problem solver with the ability to make thoughtful decisions through an equity framework. My relationship-centered approach is marked by persistence and patience, fostering long-term outcomes and positive impact that withstands the test of time.</p>
+                        </div>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <div class="consultants grid grid-cols-3 justify-center items-center">
+                        <div class="col-span-1">
+                            <img class="grid justify-center items-center filter hue-rotate-360deg" id="habibah" src="https://media.licdn.com/dms/image/C4D03AQEYIUg7-iJicg/profile-displayphoto-shrink_800_800/0/1517432511929?e=1700697600&v=beta&t=8e_am5oltQQMMm6H_P56wpJocFWfGe_PcybxX1szP0E">
+                        </div>
+                        <div class="col-span-2">
+                            <h1 class="text-2xl orange">Habibah Hakeem</h1>
+                            <p class="mt-4">Dedicated to building the capacity of organizations to be impactful resources to the community at large. This is accomplished through collaboration at the highest level. I am passionate about understanding and adapting to diverse cultures and perspectives. I am a servant leader committed to the process, the people and the results.</p>
+                        </div>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <div class="consultants grid grid-cols-3 justify-center items-center">
+                        <div class="col-span-1">
+                            <img class="grid justify-center items-center" id="mo" src="https://media.licdn.com/dms/image/C5603AQEi0jWUjlpvHA/profile-displayphoto-shrink_800_800/0/1596121147599?e=1700697600&v=beta&t=0kIqOkJPDgRIAv52aD5UbvEyzHIXvbiYSn5CpMGR1uU">
+                        </div>
+                        <div class="col-span-2">
+                            <h1 class="text-2xl orange">Maureen Ewing</h1>
+                            <p class="mt-4">A results-and-heart driven leader in the social sector, working to level the playing field through social change programs and advocacy. Specialties include: diversified fund development including capital campaigns; board management and development; program development and evaluation; strategic planning and historic preservation/capital improvements.</p>
+                        </div>
+                    </div>  
+
+                    <div class="divider-line"></div>
                 </div>
-                <div class="consultants grid justify-center items-center">
-                    <img class="grid justify-center items-center" id="habibah" src="https://media.licdn.com/dms/image/C4D03AQEYIUg7-iJicg/profile-displayphoto-shrink_800_800/0/1517432511929?e=1700697600&v=beta&t=8e_am5oltQQMMm6H_P56wpJocFWfGe_PcybxX1szP0E">
-                    <p class="aboutme mt-4">Dedicated to building the capacity of organizations to be impactful resources to the community at large. This is accomplished through collaboration at the highest level. I am passionate about understanding and adapting to diverse cultures and perspectives. I am a servant leader committed to the process, the people and the results.</p>
-                </div>
-                <div class="consultants grid justify-center items-center">
-                    <img class="grid justify-center items-center" id="emily" src="https://media.licdn.com/dms/image/C5603AQEi0jWUjlpvHA/profile-displayphoto-shrink_800_800/0/1596121147599?e=1700697600&v=beta&t=0kIqOkJPDgRIAv52aD5UbvEyzHIXvbiYSn5CpMGR1uU">
-                    <p class="aboutme mt-4">A results-and-heart driven leader in the social sector, working to level the playing field through social change programs and advocacy. Specialties include: diversified fund development including capital campaigns; board management and development; program development and evaluation; strategic planning and historic preservation/capital improvements.</p>
-                </div>
-            </div>  
         </div>
    
+
         <!-- SERVICES -->
         <div id="content3" class="content-div hidden">
-            <div class="projects grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="projects grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-chart-pie yellow" style="font-size: 80px"></i>
-                    <h1>Strategic Planning</h1>
-                    <p class="services-text" id="strategic-planning">Assisting organizations in developing long-term strategic plans to set clear goals and priorities.</p>
-                </div>
-                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">   
-                    <i class="grid justify-center items-center fa-solid fa-circle-dollar-to-slot green" style="font-size: 80px"></i>
-                    <h1>Fundraising Strategy</h1>
-                    <p class="services-text" id="fundraising-strategy">Creating and implementing fundraising strategies, including grant writing, donor cultivation, and crowdfunding campaigns.</p>
-                </div>
-                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-user-tie plum" style="font-size: 80px"></i>
-                    <h1>Board Development</h1>
-                    <p class="services-text" id="board-development">Training and advising non-profit boards on governance, leadership, and best practices.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-scale-unbalanced green"  style="font-size: 80px"></i>
+                            <h1 class="text-center">Organizational Assessment</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Assessing the effectiveness of existing programs; recommending improvements or adjustments.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-regular fa-file-lines apple" style="font-size: 80px"></i>
-                    <h1>Grant Writing & Research</h1>
-                    <p class="services-text" id="grant-writing">Identifying potential grant opportunities and preparing compelling grant proposals.</p>
+                    <div class="service-card rotate-y-180">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-list-check yellow" style="font-size: 80px"></i>
+                            <h1 class="text-center">Strategic Planning</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Charting a course for future success through careful analysis and actionable strategies.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-magnifying-glass-chart pink"  style="font-size: 80px"></i>
-                    <h1>Program Evaluation</h1>
-                    <p class="services-text" id="program-evaluation">Assessing the effectiveness of existing programs and recommending improvements or adjustments.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-seedling pink" style="font-size: 80px"></i>
+                            <h1 class="text-center">Resource Development</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Maximizing funding potential and building partnerships to support your organization's growth.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-globe sunflower" style="font-size: 80px"></i>
-                    <h1>Capacity Building</h1>
-                    <p class="services-text" id="capacity-building">Helping organizations build their internal capacity through staff training, volunteer management, and infrastructure development.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-earth-asia plum" style="font-size: 80px"></i>
+                            <h1 class="text-center">Program Development</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Designing impactful programs tailored to meet community needs and achieve organizational goals.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-hand-holding-hand green" style="font-size: 80px"></i>
-                    <h1>Marketing & Public Relations</h1>
-                    <p class="services-text" id="marketing-pr">Developing marketing plans, social media strategies, and public relations campaigns to raise awareness and support.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-hand-holding-dollar sunflower" style="font-size: 80px"></i>
+                            <h1 class="text-center"> Annual Campaign Planning</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Crafting a year-round fundraising strategy to ensure consistent financial support.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-hand-holding-dollar yellow" style="font-size: 80px"></i>
-                    <h1>Financial Management</h1>
-                    <p class="services-text" id="financial-management">Providing financial analysis, budgeting assistance, and financial sustainability planning.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-bullhorn apple" style="font-size: 80px"></i>
+                            <h1 class="text-center">Storytelling & Messaging</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Shaping powerful narratives to connect with audiences and amplify your mission.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-section pink" style="font-size: 80px"></i>
-                    <h1>Non-Profit Compliance</h1>
-                    <p class="services-text" id="compliance">Ensuring organizations adhere to legal and regulatory requirements, including 501(c)(3) tax-exempt status.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-hands-holding-circle sunflower" style="font-size: 80px"></i>
+                            <h1 class="text-center">Leadership Coaching</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Empowering leaders to unlock their potential and drive organizational change.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105card">
+                    <div class="sevice-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-signs-post pink" style="font-size: 80px"></i>
+                            <h1 class="text-center">Career Alignment Coaching</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Guiding professionals to careers that align with their values and aspirations.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-scale-unbalanced sunflower" style="font-size: 80px"></i>
-                    <h1>Impact Assessment</h1>
-                    <p class="services-text" id="impact">Measuring and communicating the social and environmental impact of the organization's work.</p>
+                    <div class="service-card">   
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-user-tie yellow" style="font-size: 80px"></i>
+                            <h1 class="text-center">Interim Leadership Roles</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Providing experienced leadership to steer your organization during transitions.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-people-group plum" style="font-size: 80px"></i>
-                    <h1>Diversity, Equity, & Inclusion Training</h1>
-                    <p class="services-text" id="dei">Promoting diversity, equity, and inclusion within the organization and its programs.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-person-chalkboard apple" style="font-size: 80px"></i>
+                            <h1 class="text-center">Board Development & Training </h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Strengthening governance with skilled training and board enhancement strategies.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
-                    <i class="grid justify-center items-center fa-solid fa-hands-holding-circle apple" style="font-size: 80px"></i>
-                    <h1>Program Development</h1>
-                    <p class="services-text" id="program-development">Assisting in the creation of new programs or initiatives, from conceptualization to implementation.</p>
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-handshake-simple green" style="font-size: 80px"></i>
+                            <h1 class="text-center">Executive Recruitment</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Identifying and attracting top-tier talent to lead and innovate within your organization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service grid justify-center items-center rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+                    <div class="service-card">
+                        <div class="service-front relative">
+                            <i class="grid justify-center items-center fa-solid fa-people-group plum" style="font-size: 80px"></i>
+                            <h1 class="text-center">Diversity, Equity, Inclusion and Belonging</h1>
+                        </div>
+                        <div class="service-back hidden">
+                            <p class="text-center">Fostering an inclusive culture where diversity is valued and everyone belongs.</p>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
 
     </div>
 
-    <footer class="py-2">
-        <p class="text-xs sm:text-sm text-center bottom-0 w-full m-4">© 2023 eDittyConsultants All Rights Reserved</p>
+    <footer>
+        <p class="text-xs sm:text-sm text-center bottom-0 w-full m-4 py-2">© 2023 eDittyConsultants All Rights Reserved</p>
     </footer>
 
 </div>
 </body>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const serviceCards = document.querySelectorAll(".service");
+
+        serviceCards.forEach((card) => {
+            card.addEventListener("click", function () {
+                const front = this.querySelector(".service-front");
+                const back = this.querySelector(".service-back");
+                card.classList.toggle("rotate-y-180");
+
+                // Toggle the 'hidden' class to reveal or hide the back of the card
+                front.classList.toggle("hidden");
+                back.classList.toggle("hidden");
+            });
+        });
+    });
+</script>
 </html>
