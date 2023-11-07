@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("services"),
   ];
 
+  console.log(tabs);
+
   tabs.forEach((tab) => {
     tab.addEventListener("click", (event) => {
       event.preventDefault();
