@@ -24,15 +24,14 @@
             <ul id="tabs" class="text-2xl">
                 <li><a id="t:services" data-content-id="services">Services</a></li>
                 <li><a id="t:consultants" data-content-id="consultants">Consultants</a></li>
-                <li><a id="t:about" data-content-id="about">About</a></li>
+                <li><a id="t:about" data-content-id="about" class="primary underline">About</a></li>
             </ul>
         </div>
 
         <div id="viewport">
             <div id="about" class="content">
                 <img src="skyline.png" alt="Seattle Skyline" id="skyline">
-    
-                <div class="grid md:grid-cols-2 gap-10 text-lg">
+                <div class="aboutgrid grid md:grid-cols-2 gap-10 text-lg">
                     <!-- COLUMN ONE -->
                     <div>
                         <div class="text-justify">
@@ -42,35 +41,38 @@
                                 <span class="secondary-">learn from each other,</span> and 
                                 <span class="tertiary-">activate from a place of deep empathy and care.</span>
                             </p>  
-                            <br>
-                            <p>This is the work of humanity.</p>
-                            <p class="mt-4">This is the work we want to help you steward within your community.</p>
+                            <p class="mt-2">This is the work of humanity.</p>
+                            <p class="mt-2">This is the work we want to help you steward within your community.</p>
                         </div>
                         <br>
                         <div>
                             <h1 class="text-2xl">We Believe...</h1>
-                            <div class="spaced-text mt-2">
-                                <div>
-                                    <i class="fa-solid fa-hand-holding-heart primary"></i>
-                                    <span>the solution to any problem starts with curiosity</span>
+                            <div class="webelieve mt-2">
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary"></i></div>
+                                    <div class="grow"><span>the solution to any problem starts with curiosity</span></div>
                                 </div>
-                                <div>
-                                    <i class="fa-solid fa-hand-holding-heart primary"></i>
-                                    <span>curiosity paired with empathy creates a path for true compassion</span>
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary"></i></div>
+                                    <div class="grow"><span>curiosity paired with empathy creates a path for true compassion</span></div>
                                 </div>
-                                <div>
-                                    <i class="fa-solid fa-hand-holding-heart primary"></i>
-                                    <span>there is power in collaboration and community building</span>
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary"></i></div>
+                                    <div class="grow"><span>there is power in collaboration and community building</span></div>
                                 </div>
-                                <div>
-                                    <i class="fa-solid fa-hand-holding-heart primary"></i>
-                                    <span>inviting and honoring diverse perspectives enrich exploration and creation</span>
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary col-span-1"></i></div>
+                                    <div class="grow"><span>inviting and honoring diverse perspectives enrich exploration and creation</span></div>
                                 </div>
-                                <div>
-                                    <i class="fa-solid fa-hand-holding-heart primary"></i>
-                                    <span>the best solutions arise when those closest to the problem are included in the process</span>
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary"></i></div>
+                                    <div class="grow"><span>inviting and honoring diverse perspectives enrich exploration and creation</span></div>
                                 </div>
-                                <p class="text-xl bold text-center">We believe in YOU.</p>
+                                <div class="believe flex">
+                                    <div class="flex-none w-8"><i class="fa-solid fa-hand-holding-heart primary"></i></div>
+                                    <div class="grow"><span>the best solutions arise when those closest to the problem are included in the process</span></div>
+                                </div>
+                                <p class="believe text-xl bold text-center">We believe in YOU.</p>
                             </div>  
                         </div>
                     </div>
@@ -84,7 +86,7 @@
                         <h1 class="pt-4 text-2xl mb-6">Our Team</h1>
                         <p>We have spent most of our lives working in organizations tasked with solving problems often scarcely resourced. Holding true to our values and beliefs, we have moved mountains and made a difference in the world. We will help you do the same.</p>
                         <br>
-                        <p class="text-2xl"><span class="underline primary"><a href="mailto:hello@edittyconsultants.com">Contact</a></span> us today to learn more.</p>
+                        <p class="text-xl text-center"><span class="underline primary"><a href="mailto:hello@edittyconsultants.com">Contact us today</a></span> to learn more.</p>
                     </div>
                 </div>
             </div>
@@ -98,6 +100,8 @@
                     <div class="col-span-2 md:col-span-2 bio">
                         <p class="mt-4">Emily is an empathetic and curious problem solver, creating pathways centered in equity and inclusion practices. She is a deeply relational and loves building engaged communities committed to positive change. She has more than 20 years of experience gathering resources, building teams, and activating highly impactful strategies to promote peace, health, education, and compassion for the benefit of humanity.</p>
                         <p class="mt-4">When Emily is not leading or managing projects, you can find her dabbling with paints, reading too many books at once, exploring, and spending as much time as possible with loved ones.</p>
+                        <p class="mt-4"><span class="underline primary"><a href="mailto:emily@edittyconsultants.com">Contact Emily</a></span> for a consultation.</p>
+
                     </div>
                 </div>
                 <div id="habibah" class="grid grid-cols-1 md:grid-cols-3 consultant">
@@ -109,6 +113,7 @@
                     <div class="col-span-2 md:col-span-2 bio">
                         <p class="mt-4">Habibah is dedicated to building the capacity of organizations so they can be a sustainable resource and positively impact communities. Habibah accomplishes this through collaboration at the highest level. She is passionate about cultivating understanding and finding adaptive solutions informed by diverse perspectives. She is a servant leader committed to the process, the people, and the outcomes.</p>
                         <p class="mt-4">When Habibah is not working with clients you can find her hiking, traveling, volunteering, and reading her way through a supersized stack of books.</p>
+                        <p class="mt-4"><span class="underline primary"><a href="mailto:habibah@edittyconsultants.com">Contact Habibah</a></span> for a consultation.</p>
                     </div>
                 </div>
             </div>
@@ -117,10 +122,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-scale-unbalanced mr-6"></i>
+                            <i class="fa-solid fa-scale-unbalanced primary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"> <i class="fa-solid fa-scale-unbalanced hidden mr-2"></i>Organizational Assessment</h1>
+                            <h1 class="text-xl bold"> <i class="fa-solid fa-scale-unbalanced hidden primary mr-2"></i>Organizational Assessment</h1>
                             <p>Assessing the effectiveness of existing programs; recommending improvements or adjustments.</p>
                         </div>
                     </div>                    
@@ -128,10 +133,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-list-check mr-6"></i>
+                            <i class="fa-solid fa-list-check secondary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-list-check hidden mr-2"></i>Strategic Planning</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-list-check hidden secondary mr-2"></i>Strategic Planning</h1>
                             <p>Charting a course for future success through careful analysis and actionable strategies.</p>
                         </div>
                     </div>
@@ -139,10 +144,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-seedling mr-6"></i>
+                            <i class="fa-solid fa-seedling tertiary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-seedling hidden mr-2"></i>Resource Development</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-seedling hidden tertiary mr-2"></i>Resource Development</h1>
                             <p>Maximizing funding potential and building partnerships to support your organization's growth.</p>
                         </div>
                     </div>
@@ -150,10 +155,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-earth-asia mr-6"></i>
+                            <i class="fa-solid fa-earth-asia quaternary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-earth-asia hidden mr-2"></i>Program Development</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-earth-asia hidden quaternary mr-2"></i>Program Development</h1>
                             <p>Designing impactful programs tailored to meet community needs and achieve organizational goals.</p>
                         </div>
                     </div>
@@ -161,10 +166,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-hand-holding-dollar sunflower mr-6"></i>
+                            <i class="fa-solid fa-hand-holding-dollar primary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-hand-holding-dollar sunflower hidden mr-2"></i>Annual Campaign Planning</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-hand-holding-dollar hidden primary mr-2"></i>Annual Campaign Planning</h1>
                             <p>Crafting a year-round fundraising strategy to ensure consistent financial support.</p>
                         </div>
                     </div>
@@ -172,10 +177,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-bullhorn mr-6"></i>
+                            <i class="fa-solid fa-bullhorn secondary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-bullhorn hidden mr-2"></i>Storytelling & Messaging</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-bullhorn hidden secondary mr-2"></i>Storytelling & Messaging</h1>
                             <p>Shaping powerful narratives to connect with audiences and amplify your mission.</p>
                         </div>
                     </div>
@@ -183,10 +188,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-hands-holding-circle mr-6"></i>
+                            <i class="fa-solid fa-hands-holding-circle tertiary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-hands-holding-circle hidden mr-2"></i>Leadership Coaching</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-hands-holding-circle hidden tertiary mr-2"></i>Leadership Coaching</h1>
                             <p>Empowering leaders to unlock their potential and drive organizational change.</p>
                         </div>
                     </div>
@@ -194,10 +199,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-signs-post mr-6"></i>
+                            <i class="fa-solid fa-signs-post quaternary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-signs-post hidden mr-2"></i>Career Alignment Coaching</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-signs-post hidden quaternary mr-2"></i>Career Alignment Coaching</h1>
                             <p>Guiding professionals to careers that align with their values and aspirations.</p>
                         </div>
                     </div>
@@ -205,10 +210,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-user-tie mr-6"></i>
+                            <i class="fa-solid fa-user-tie primary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-user-tie hidden mr-2"></i>Interim Leadership Roles</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-user-tie hidden primary mr-2"></i>Interim Leadership Roles</h1>
                             <p>Providing experienced leadership to steer your organization during transitions.</p>
                         </div>
                     </div>
@@ -216,10 +221,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-person-chalkboard mr-6"></i>
+                            <i class="fa-solid fa-person-chalkboard secondary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-person-chalkboard hidden mr-2"></i>Board Development & Training </h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-person-chalkboard hidden secondary mr-2"></i>Board Development & Training </h1>
                             <p>Strengthening governance with skilled training and board enhancement strategies.</p>
                         </div>
                     </div>
@@ -227,10 +232,10 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-handshake-simple mr-6"></i>
+                            <i class="fa-solid fa-handshake-simple tertiary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-handshake-simple hidden mr-2"></i>Executive Recruitment</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-handshake-simple hidden tertiary mr-2"></i>Executive Recruitment</h1>
                             <p>Identifying and attracting top-tier talent to lead and innovate within your organization.</p>
                         </div>
                     </div>
@@ -238,14 +243,15 @@
                 <div class="service">
                     <div class="flex items-center">
                         <div class="icons">
-                            <i class="fa-solid fa-people-group mr-6"></i>
+                            <i class="fa-solid fa-people-group quaternary mr-6"></i>
                         </div>
                         <div>
-                            <h1 class="text-xl bold"><i class="fa-solid fa-people-group hidden mr-2"></i>Diversity, Equity, Inclusion and Belonging</h1>
+                            <h1 class="text-xl bold"><i class="fa-solid fa-people-group hidden quaternary mr-2"></i>Diversity, Equity, Inclusion and Belonging</h1>
                             <p>Fostering an inclusive culture where diversity is valued and everyone belongs.</p>
                         </div>
                     </div>
                 </div>
+                <p class="text-xl text-center mt-6"><span class="underline primary"><a href="mailto:hello@edittyconsultants.com">Contact us today</a></span> to learn more.</p>
             </div>
         </div>
 

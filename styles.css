@@ -36,7 +36,8 @@ body {
 } */
 
 #skyline {
-    transform: scale(0.6);
+    width: 65%;
+    margin: 0 auto;
 }
 
 #consultants {
@@ -49,6 +50,7 @@ body {
     width: 100%;
     object-fit: contain;
 }
+
 #services {
     width: 70%;
     margin: 0 auto;
@@ -76,12 +78,15 @@ body {
 .primary {
     color: #fa4508;
 }
+
 .secondary {
     color: #748c75;
 }
+
 .tertiary {
     color: #5c3a51;
 }
+
 .quaternary {
     color: #f5a21e;
 }
@@ -90,10 +95,17 @@ body {
     font-weight: bold;
 }
 
-.spaced-text p {
-    line-height: 2.4;
+.believe > i {
+    font-size: 20px;
 }
 
+.webelieve > .believe {
+    margin-top: 10px;
+}
+
+.aboutgrid {
+    padding-top: 20px;
+}
 /* Media Overrides */
 @media (max-width: 1024px) {
     #container {
