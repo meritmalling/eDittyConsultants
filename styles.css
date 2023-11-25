@@ -1,157 +1,153 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
-html {
-    margin: 0 auto;
-}
-
 body {
     background-color: #fdf7ed;
     color: #312823;
     font-family: 'Montserrat';
-    font-size: 20px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     user-select: none;
-    padding: 16px;
 }
 
-.content-container {
-    width: 100%;
+#container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 100px;
+    height:100vh
+}
+
+#nav {
+    margin-top: 60px;
+}
+
+#nav > ul > li {
+    float: right;
+    margin: 6px;
+    padding-left: 30px;
+}
+
+/* Tab Hover */
+#tabs li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Needed whe skyline image is removed. */
+/* #about {
+    padding-top: 80px;  
+} */
+
+#skyline {
+    transform: scale(0.6);
+}
+
+#consultants {
+    padding-top: 80px;
+}
+
+#consultants img {
+    padding: 20px;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+#services {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.bio {
+    margin: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.icons > i  {
+    font-size: 80px;
 }
 
 /* Color Classes */
-.yellow {
-    color: #f5a21e;
+.primary {
+    color: #fa4508;
 }
-.plum {
-    color: #5c3a51;
-}
-.green {
+.secondary {
     color: #748c75;
 }
-.apple {
-    color: #abb6a4;
+.tertiary {
+    color: #5c3a51;
 }
-.sunflower {
-    color: #f3c583;
-}
-.pink {
-    color: #f9b3a4;
-}
-.orange {
-    color: #fa4508;
+.quaternary {
+    color: #f5a21e;
 }
 
-/* Hovers */
-#tabs-list li:hover {
-    color: #fa4508;
-    cursor: pointer;
+.bold {
+    font-weight: bold;
 }
 
-.service:hover i {
-    color: #fa4508;
-    cursor: pointer;
-
+.spaced-text p {
+    line-height: 2.4;
 }
-
-.consultants {
-    min-height: 300px;
-}
-
-.consultants img {
-    border-radius: 10%; 
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.service {
-    min-height: 180px;
-}
-
 
 /* Media Overrides */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
+@media (max-width: 1024px) {
+    #container {
+        width: 100%;
+        padding: 30px;
     }
+
+    #viewport {
+        padding-top: 20px;
+    }
+
+    #nav {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #nav > ul {
+        display: inline-block; 
+    }
+
+    #nav > ul > li{
+        font-size: 0.8em;
+        padding-left: unset;
+        padding-top: 6px;
+    }
+
+    #consultants {
+        padding-top: 0px;
+    }
+
+    #habibah {
+        margin-top: 30px;
+    }
+
+    #services {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .icons  {
+        display: none;
+    }
+
+    .service > div > div > h1 {
+        margin-top: 30px;
+    } 
+
+    .service > div > div > h1 > i {
+        display: inline-block;
+    } 
+
+    .service > div > div > p {
+        margin-top: 10px;
+    }
+
 }
-
-/* Random - REVISIT THESE */
-/* .content-viewport {
-    padding-top: 2rem;
-}
-
-.about ul li {
-    padding-top: .4em;
-} */
-
-
-/* .services i {
-    padding-bottom: 8px;
-} */
-/* 
-.service-card {
-    perspective: 1000px;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-} 
-
-.service.service:click .service-card {
-    transform: rotateY(180deg);
-}
-
-.service-front,
-.service-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.service-back {
-    transform: rotateY(180deg);
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-/* .service-card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-}
-
-.service-front,
-.service-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.service-back {
-    transform: rotateY(180deg);
-} */
-
-.divider-line {
-    height: 1px; /* Set the thickness of the line */
-    background-color: #fa4508; /* Set the color of the line */
-    border: none; /* Ensure there is no border */
-    margin-top: 10px; /* Optional: space above the line */
-    margin-bottom: 10px; /* Optional: space below the line */
-  }
-  

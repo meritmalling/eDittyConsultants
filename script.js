@@ -1,30 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const contentDivs = document.querySelectorAll(".content-div");
-
+  // Collection of tabs
   const tabs = [
-    document.getElementById("about"),
-    document.getElementById("consultants"),
-    document.getElementById("services"),
+    document.getElementById("t:about"),
+    document.getElementById("t:consultants"),
+    document.getElementById("t:services"),
   ];
 
-  console.log(tabs);
+  // Collection of views
+  const views = document.querySelectorAll(".content");
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", (event) => {
       event.preventDefault();
 
-      contentDivs.forEach((div) => {
-        div.classList.add("hidden");
+      // Hide all views
+      views.forEach((view) => {
+        view.classList.add("hidden");
       });
 
-      const contentId = tab.getAttribute("data-content-id");
-      const contentDiv = document.getElementById(contentId);
-      contentDiv.classList.remove("hidden");
+      // Show the selected view
+      const selected = tab.getAttribute("data-content-id");
+      const active = document.getElementById(selected);
+      active.classList.remove("hidden");
 
+      // Update tab styles
       tabs.forEach((tab) => {
-        tab.classList.remove("orange");
+        tab.classList.remove("primary");
+        tab.classList.remove("underline");
       });
-      tab.classList.add("orange");
+      tab.classList.add("primary");
+      tab.classList.add("underline");
     });
   });
 });
