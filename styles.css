@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-    /* background-color: #f8f8ff; */
     background-color: #fbfcfa;
-    /* background-color: #fefefa; */
     color: black;
     font-family: 'Montserrat';
     user-select: none;
@@ -41,9 +39,12 @@ body {
 
 
 #skyline {
-    /* padding-top: 100px; */
     width: 60%;
     margin: 0 auto;
+}
+
+.aboutgrid {
+    margin-top: 20px;
 }
 
 #consultants {
@@ -58,14 +59,7 @@ body {
 }
 
 #services {
-    /* width: 70%; */
-    /* margin: 0 auto; */
     padding-top: 80px;
-}
-
-#contactus {
-    /* width: 100%; */
-    /* width: 100vw; */
 }
 
 .bio {
@@ -76,7 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    min-width: 130px;
     height: 130px;
     box-sizing: border-box;
 }
@@ -115,11 +109,7 @@ body {
     /* color: #aa3377; */
     /* color: #f5793a; */
     color: #aa3377;
-
-
 }
-
-/* color: #4477aa; */
 
 .bold {
     font-weight: bold;
@@ -134,7 +124,10 @@ body {
 }
 
 #footer {
-    padding-bottom: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
 }
 
 /* Media Overrides */
