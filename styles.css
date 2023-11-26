@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-    background-color: f9f3eb;
+    background-color: #f8f8ff;
+    /* background-color: #fff5ee; */
+    /* background-color: #fefefa; */
     color: black;
     font-family: 'Montserrat';
     user-select: none;
