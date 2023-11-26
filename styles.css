@@ -58,9 +58,14 @@ body {
 }
 
 #services {
-    width: 70%;
-    margin: 0 auto;
+    /* width: 70%; */
+    /* margin: 0 auto; */
     padding-top: 80px;
+}
+
+#contactus {
+    /* width: 100%; */
+    /* width: 100vw; */
 }
 
 .bio {
