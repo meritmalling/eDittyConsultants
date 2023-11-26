@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-    background-color: #fdf7ed;
-    color: #312823;
+    background-color: black;
+    color: white;
     font-family: 'Montserrat';
     user-select: none;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 #nav {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #nav > ul > li {
@@ -30,13 +30,16 @@ body {
     cursor: pointer;
 }
 
-/* Needed whe skyline image is removed. */
-/* #about {
-    padding-top: 80px;  
-} */
+#divider {
+    width: 100%;
+    height: 11px;
+    margin-top: 36px;
+}
+
 
 #skyline {
-    width: 65%;
+    /* padding-top: 100px; */
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -76,20 +79,33 @@ body {
 
 /* Color Classes */
 .primary {
-    color: #fa4508;
-}
+    /* color: #fa4508; */
+    /* color: #f5793a; */
+    /* color: #0f2080; */
+    color: #ee6576;}
 
 .secondary {
-    color: #748c75;
+    /* color: #748c75; */
+    /* color: #a95aa0; */
+    /* color: #0f2080; */
+    color: #65ccee;
 }
 
 .tertiary {
-    color: #5c3a51;
+    /* color: #5c3a51; */
+    /* color: #85bff9; */
+    /* color: #62acbe; */
+    color: #4477aa;
 }
 
 .quaternary {
-    color: #f5a21e;
+    /* color: #f5a21e; */
+    /* color: #0f2080; */
+    /* color: #f9f3eb; */
+    color: #f9f3eb;
 }
+
+/* color: #4477aa; */
 
 .bold {
     font-weight: bold;
@@ -103,9 +119,10 @@ body {
     margin-top: 10px;
 }
 
-.aboutgrid {
-    padding-top: 20px;
+#footer {
+    padding-bottom: 10px;
 }
+
 /* Media Overrides */
 @media (max-width: 1024px) {
     #container {
@@ -113,8 +130,8 @@ body {
         padding: 30px;
     }
 
-    #viewport {
-        padding-top: 20px;
+    #divider {
+        display: none;
     }
 
     #nav {
