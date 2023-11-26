@@ -80,31 +80,36 @@ body {
 
 /* Color Classes */
 .primary {
-    /* color: #fa4508; */
+    color: #fa4508;
     /* color: #f5793a; */
     /* color: #0f2080; */
-    color: #ee6576;
+    /* color: #ee6576; */
+    /* color: #aa3377; */
 }
 
 .secondary {
     /* color: #748c75; */
     /* color: #a95aa0; */
-    /* color: #0f2080; */
-    color: #65ccee;
+    color: #0f2080;
+    /* color: #65ccee; */
 }
 
 .tertiary {
     /* color: #5c3a51; */
     /* color: #85bff9; */
-    /* color: #62acbe; */
-    color: #4477aa;
+    color: #62acbe;
+    /* color: #4477aa; */
 }
 
 .quaternary {
     /* color: #f5a21e; */
     /* color: #0f2080; */
     /* color: #f9f3eb; */
+    /* color: #aa3377; */
+    /* color: #f5793a; */
     color: #aa3377;
+
+
 }
 
 /* color: #4477aa; */
