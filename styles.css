@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-    background-color: black;
-    color: white;
+    background-color: f9f3eb;
+    color: black;
     font-family: 'Montserrat';
     user-select: none;
+    min-height: 100vh;
 }
 
 #container {
@@ -82,7 +83,8 @@ body {
     /* color: #fa4508; */
     /* color: #f5793a; */
     /* color: #0f2080; */
-    color: #ee6576;}
+    color: #ee6576;
+}
 
 .secondary {
     /* color: #748c75; */
@@ -102,7 +104,7 @@ body {
     /* color: #f5a21e; */
     /* color: #0f2080; */
     /* color: #f9f3eb; */
-    color: #f9f3eb;
+    color: #aa3377;
 }
 
 /* color: #4477aa; */
