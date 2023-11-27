@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
       tab.classList.add("underline");
     });
   });
+
+  const grid = document.getElementById("servicegrid");
+  if (window.innerWidth < 768) {
+    grid.classList.remove("gap-20");
+  }
 });
 
-// when mobile add text-justify class
+window.addEventListener("resize", function () {
+  const grid = document.getElementById("servicegrid");
+  if (window.innerWidth < 768) {
+    grid.classList.remove("gap-20");
+  }
+});
