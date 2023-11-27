@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-    background-color: #fbfcfa;
-    color: black;
+    background-color: #fdf7ed;
+    color: #312823;
     font-family: 'Montserrat';
     user-select: none;
     min-height: 100vh;
@@ -43,8 +43,18 @@ body {
     margin: 0 auto;
 }
 
+#habibah {
+    margin-top: 30px;
+}
+
 .aboutgrid {
     margin-top: 20px;
+}
+
+.contact {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #consultants {
@@ -82,33 +92,15 @@ body {
 /* Color Classes */
 .primary {
     color: #fa4508;
-    /* color: #f5793a; */
-    /* color: #0f2080; */
-    /* color: #ee6576; */
-    /* color: #aa3377; */
 }
-
 .secondary {
-    /* color: #748c75; */
-    /* color: #a95aa0; */
-    color: #0f2080;
-    /* color: #65ccee; */
+    color: #748c75;
 }
-
 .tertiary {
-    /* color: #5c3a51; */
-    /* color: #85bff9; */
-    color: #62acbe;
-    /* color: #4477aa; */
+    color: #5c3a51;
 }
-
 .quaternary {
-    /* color: #f5a21e; */
-    /* color: #0f2080; */
-    /* color: #f9f3eb; */
-    /* color: #aa3377; */
-    /* color: #f5793a; */
-    color: #aa3377;
+    color: #f5a21e;
 }
 
 .bold {
@@ -124,10 +116,7 @@ body {
 }
 
 #footer {
-    position: fixed;
-    left: 0;
-    bottom: 30px;
-    width: 100%;
+    position: relative;
 }
 
 /* Media Overrides */
@@ -160,9 +149,7 @@ body {
         padding-top: 0px;
     }
 
-    #habibah {
-        margin-top: 30px;
-    }
+
 
     #services {
         padding: 0px;
