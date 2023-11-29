@@ -44,4 +44,7 @@ window.addEventListener("resize", function () {
   if (window.innerWidth < 768) {
     grid.classList.remove("gap-20");
   }
+  if (window.innerWidth > 768) {
+    grid.classList.add("gap-20");
+  }
 });
